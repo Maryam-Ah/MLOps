@@ -19,8 +19,8 @@ jobs:
     steps:
       - task: UsePythonVersion@0
         inputs:
-          versionSpec: '3.x'
-          architecture: 'x86'
+          versionSpec: '3.8.5'
+          architecture: 'x64'
     
       - script: |
           python -m pip install --upgrade pip
