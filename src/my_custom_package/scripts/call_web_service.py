@@ -50,16 +50,16 @@ def score_predictions(y_valid, y_pred):
 
 
 def main():
-    storage_acct_name = os.environ['STORAGE_ACCT_NAME']
-    storage_acct_key = os.environ['STORAGE_ACCT_KEY']
-    workspace_name = os.environ['AML_WORKSPACE_NAME']
-    resource_group = os.environ['RESOURCE_GROUP']
-    subscription_id = os.environ['SUBSCRIPTION_ID']
+    storage_acct_name = os.environ['mlopsstorage20']
+    storage_acct_key = os.environ['e7xdAIoeNtZm56qs2EGHTripm+5pe/gZg/SryCvdDbmP+EXG1kkUnOnSsqgI1Z6YYdEUxYsU1I1c1ZIXQ9o1GQ==']
+    workspace_name = os.environ['MLOps-workspace']
+    resource_group = os.environ['MLOps-resource-group']
+    subscription_id = os.environ['29fdd0e7-868a-4d99-86cb-1dfed4385ac4']
 
     spn_credentials = {
-        'tenant_id': os.environ['TENANT_ID'],
-        'service_principal_id': os.environ['SPN_ID'],
-        'service_principal_password': os.environ['SPN_PASSWORD'],
+        'tenant_id': os.environ['6337c39b-3b06-497b-9082-cdcb10a1390b'],
+        'service_principal_id': os.environ['bc436c92-da69-46db-a031-246ad636fa2e'],
+        'service_principal_password': os.environ['0lhhD-8wW2BmaV5~GrLy2YE_8Piw8ONsyf'],
     }
 
     aml_interface = AMLInterface(
